@@ -5,7 +5,7 @@ This repository contains mini Python projects created to master dictionaries and
 ## Projects
 
 - ✅ Phone Book
-- ⬜ Employee Database
+- ✅ Employee Database
 - ⬜ Inventory Manager
 - ⬜ Movie Collection
 - ⬜ Bank Account System

@@ -17,7 +17,7 @@ def adding_contact():
             contacts[name]=ph_no
         # if ph_no is exces of 10 or minial of 10 digits 
         else:
-            print(f"check the phno length-{len(ph_no)}\nwe need 10 digits of phno")
+            print(f"check the phno length-{len(str(ph_no))}\nwe need 10 digits of phno")
         print("contact added succesfully")
         print("\n----------------------------------")
 
@@ -50,7 +50,7 @@ def update_number():
             contacts.update({name:ph_no})
         else:
             print(f"check the phno length-{len(ph_no)}\nwe need 10 digits of phno")
-        print("contact added succesfully")
+        print("contact updated succesfully")
     print("----------------------------------\n")
 
 

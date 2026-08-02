@@ -8,6 +8,7 @@ employees = {
 global highestSalary
 highestSalary=101
 def add_employee():
+    global highestSalary
     print("\n=========================================")
     employees_id=int(input("employee id: "))
     if employees_id not in employees:
@@ -54,6 +55,7 @@ def search_employees():
         print("------------------------------------")
 
 def update_salary():
+    global highestSalary
     print("------------------------------------")
     employees_id=int(input("id: "))
     if employees_id in employees:
@@ -81,7 +83,7 @@ def delete_employee():
 
 def highest_salary():
     print("Highest Salary Employee")
-    if employees != None:
+    if employees != {}:
         print(f"name : {employees.get(highestSalary).get('name')}\nsalary : {employees.get(highestSalary).get('salary')}\ndepartment : {employees.get(highestSalary).get('department')}")
     else:
         print("there is no data in employee")
@@ -99,7 +101,7 @@ def employees_in_department():
             print(obj["name"])
             found=True
 
-    if found != true: 
+    if found != True: 
         print("there is no data in empolyee")
 
 while True:
